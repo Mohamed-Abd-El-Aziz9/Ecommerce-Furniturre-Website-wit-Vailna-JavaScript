@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenda</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200&display=swap" rel="stylesheet">
+
+    <!---Bootstrap Files-->
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <!---Fontasome Files-->
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/all.min.js"></script>
+
+
+    <!---Style File-->
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+
+</head>
+<style>
+    html {
+        overflow-x:hidden ;
+    }
+</style>
+<body>
+    <nav id="nav-bar" class="nav2 navbar navbar-expand-lg bg-black ">
+        <div class="container">
+            <a class="navbar-brand mt-3" href="#"> KENDA </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Work</a>
+                    </li>
+
+
+                </ul>
+
+                <div class=" text-white ms-auto">
+                    <form class="d-flex mt-3">
+                        <input class="bg-transparent border-0 email-footer ps-2 pe-5 mb-2" type="search"
+                            placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary ms-3" type="submit">Search</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div class="layer3 py-5">
+        <div class="row">
+                
+        <section class="container container-form col-md-3">
+           
+                <form class="form2">
+                    <h1 class="text-center mb-4 text mt-5 text-black "> Sign Up </h1>
+    
+                    <input type="text" class="form-control mb-4 text-black   text-black" id="Name" placeholder="Name"
+                        name="name" onkeyup=" valdiationname(); ">
+                    <p id="name-vald" class="name-val d-none text-danger fs-6 ms-2"><i
+                            class="fa-solid fa-circle-exclamation me-2"></i> Name is required !</p>
+    
+                    <input type="email" class="form-control mb-4  text-black bg-transparent  " id="Email"
+                        aria-describedby="emailHelp" placeholder="Email address" name="email" onkeyup="validationEmail()">
+                    <p id="email-vald" class=" d-none text-danger fs-6 ms-2"><i
+                            class="fa-solid fa-circle-exclamation me-2"></i> Email is not valid !</p>
+    
+                    <div class="password">
+                        <input type="password" class="form-control mb-4  text-black bg-transparent " id="password"
+                            placeholder="Password" name="password" onkeyup="validationpassword()">
+                        <i id="eye" class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="password">
+                        <input type="password" class="form-control mb-4  text-black bg-transparent " id="re-password"
+                            placeholder="re-enter password" name="password" onkeyup="validationpassword()">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+    
+    
+    
+    
+    
+                    <div class="mt-4">
+                        <label class="fw-bold text-black">Gender :</label>
+                        <input id="male" type="radio" class="ms-3" name="gender" value="Male">
+                        <label for="male" class="me-2 text-black">Male </label>
+                        <input id="female" type="radio" class="me-2" name="gender" value="Female">
+                        <label for="Female" class="me-2 text-black"> Female </label>
+                    </div>
+                    <p id="gender-vald" class=" d-none text-danger fs-6 ms-2"><i
+                            class="fa-solid fa-circle-exclamation me-2"></i>Select Gender please</p>
+    
+    
+                    <div class="buttons mt-5">
+                        <button id="submit" type="submit" class="btn btn-success me-3 ">Submit</button>
+                        <button type="reset" class="btn btn-danger" onclick=" resetForm() ">reset</button>
+    
+                    </div>
+    
+                </form>
+    
+    
+
+            
+        </section>
+        
+    </div>
+    </div>
+
+
+    <script src="js/FormValidation.js"></script>
+
+</body>
+
+</html>

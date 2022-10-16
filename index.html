@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenda</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200&display=swap" rel="stylesheet">
+
+    <!---Bootstrap Files-->
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <!---Fontasome Files-->
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/all.min.js"></script>
+
+
+    <!---Style File-->
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+
+</head>
+
+<body>
+
+    <a href="index.html"><i class="fa-solid fa-arrow-up"></i></a>
+
+
+
+    <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light  ">
+        <div class="container">
+            <a class="navbar-brand mt-3" href="#"> KENDA </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Work</a>
+                    </li>
+
+
+                </ul>
+
+                <div class="icons text-white ms-auto">
+                    <i class="icon fa-brands fa-facebook pe-4 ps-3"></i>
+                    <i class="icon fa-brands fa-instagram pe-4"></i>
+                    <i class="icon fa-brands fa-twitter pe-4"></i>
+                    <span class="cart">
+                        <i class=" icon-cart fa-solid fa-cart-shopping ms-2 fs-3"></i>
+                        <span id="notifcation" class=" ">0</span>
+                    </span>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <sectoin class="click-buttons">
+        <div class=" arrows">
+            <i onclick=" moveForward() " id="leftClick" class="left fa-solid fa-angle-left "></i>
+            <i onclick=" moveBack() " id="rightClick" class="right fa-solid fa-angle-right"></i>
+        </div>
+    </sectoin>
+
+    <section id="container">
+        <div class="layer">
+            <div class=" content d-flex flex-wrap justify-content-center  align-content-center vh-100 text-white">
+                <div class="content">
+                    <h1 class="text-center">Amazing Exclusive Design</h1>
+                    <p class=" text-center">Elegant And Chic Furniture For Those Who Value Comfort</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="Offers my-5">
+        <div class="container">
+            <div class="banner text-center">
+                <h1 class="text-center">Who We Are ?<p id="back-bone">Who We Are</p>
+                </h1>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 mt-5">
+                    <p class="text-muted">
+                        Ballard Furniture is a furniture-producing company which items can be characterized as unique,
+                        non-
+                        conformist
+                        and authentic — never boring and always full of imagination and inspiration.
+                    </p>
+
+                    <p class="text-muted">
+                        Ballard Furniture succeeds for years in tracking down style icons, developing trends and
+                        innovations
+                        in
+                        furniture design, and using them to fulfil the dreams of furnishing enthusiasts
+                    </p>
+                    <p class="text-muted">
+                        With the courage to innovate, Furnicom creates trends and unique furishing collections being
+                        affordable and desirable for all people. As an international supplier and generator of change
+                        Furnicom continues creating new fumishing designs and art objects.
+                    </p>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="frame">
+                        <img class=" img-frame w-100 p-3" src="images/njFdth8g-e1614791553686.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="video mb-2">
+        <div class="banner text-center">
+            <h1 class="text-center ">Made with love<p id="back-bone" class="">Made with love</p>
+            </h1>
+        </div>
+
+        <div class="video mt-5 ">
+            <div class="d-flex justify-content-center w-100">
+                <video width="100%" height="450" controls>
+                    <source src="images/Video-2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container catergory my-5 ">
+        <h1 class="text-center cat tan-color">Category</h1>
+        <div class="container pt-5">
+            <div class="categs text-center">
+                <span onclick="showbeds()" id="bed-btn" class="p-4 text-muted cat_item">Beds</span>
+                <span onclick=" shownight()" class="p-4 text-muted cat_item ">NIGHTSTANDS</span>
+                <span onclick=" showdress()" class="p-4 text-muted cat_item">Dresses</span>
+                <span onclick=" showbanquets()" class="p-4 text-muted cat_item">Banquettes</span>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container-fluid my-5 ">
+            <div class="row ">
+                <div class="col-md-3">
+                    <div class="d-flex justify-content-between">
+                        <span id="filter">
+                            Filter
+                        </span>
+                        <i class="fa-solid fa-sort-down"></i>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-top d-flex justify-content-between">
+                        <span class=" ms-1 ">Material</span>
+                        <i id="view-filter-material" class="fa-thin fa-plus ms-5 fs-4 "></i>
+                    </div>
+
+                    <div id="lists1" class="lists d-none ms-3 mt-3  text-muted">
+                        <input class="p-2 " type="checkbox" id="vehicle1" name="vehicle1" value="Beach">
+                        <label class="p-2 " for="vehicle1"> Beach</label><br>
+                        <input class="p-2 " type="checkbox" id="vehicle2" name="vehicle2" value="Chery">
+                        <label class="p-2 " for="vehicle2"> Chery</label><br>
+                        <input class="p-2 " type="checkbox" id="vehicle3" name="vehicle3" value="lamada">
+                        <label class="p-2 " for="vehicle3"> lamada</label>
+                        <div>
+                            <input class="p-2 " type="checkbox" id="vehicle4" name="vehicle4" value="lamada">
+                            <label class="p-2" for="vehicle3"> Oak</label>
+                        </div>
+
+                        <div>
+                            <input class="p-2 " type="checkbox" id="vehicle4" name="vehicle4" value="lamada">
+                            <label class="p-2" for="vehicle3"> Walnut</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-top d-flex justify-content-between">
+                        <span class=" ms-2 ">Price</span>
+                        <i id="view-filter-price" class="fa-thin fa-plus ms-5 fs-4 "></i>
+                    </div>
+                    <div id="lists2" class="lists d-none ms-3 mt-3 text-muted">
+                        <input class="p-2" type="checkbox" id="vehicle1" name="vehicle1" value="Beach">
+                        <label class="p-2" for="vehicle1"> 100</label><br>
+                        <input class="p-2" type="checkbox" id="vehicle2" name="vehicle2" value="Chery">
+                        <label class="p-2" for="vehicle2"> 200</label><br>
+                        <input class="p-2" type="checkbox" id="vehicle3" name="vehicle3" value="lamada">
+                        <label class="p-2" for="vehicle3"> 300</label>
+                        <div>
+                            <input class="p-2 " type="checkbox" id="vehicle4" name="vehicle4" value="lamada">
+                            <label class="p-2" for="vehicle3"> 400</label>
+                        </div>
+
+                        <div>
+                            <input class="p-2 " type="checkbox" id="vehicle4" name="vehicle4" value="lamada">
+                            <label class="p-2" for="vehicle3"> 500</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="bed" class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mt-3 ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/beds/Cane-Bed-e1634824995122-600x600.jpeg" alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Twinkle Bed
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            33,800LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/beds/Embellish-bed-4-600x600.jpg" alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Rays Bed </h5>
+                                        <p class="price text-center mt-3">
+                                            17,700LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " type="button"
+                                                class="buy-now btn btn-outline-dark ">Buy
+                                                Now <i class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/beds/Grooves-Bed-scaled-e1616491437204-600x600.jpg"
+                                        alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Embellish Bed
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            17,900LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/beds/Ivy-Bed-scaled-600x600.jpg" alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Embellish Bed
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            17,900LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/beds/Kenda-Halazouni-Bed-2-scaled-600x600.jpg"
+                                        alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Embellish Bed
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            17,900LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick="addProduct()" type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/beds/Kenda-Metallic-Bed-2-scaled-600x600.jpg" alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Embellish Bed
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            17,900LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class="fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div id="NIGHTSTANDS" class="d-none bed col-md-9">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 col-lg-4 mt-3 ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/NightStands/1608082385660-scaled-600x600.jpg" alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Tide Nightstand
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            33,800LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/NightStands/Tide-Nightstand-1-600x600.jpg" alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Embellish Nightstand
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            17,700LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " type="button"
+                                                class="buy-now btn btn-outline-dark ">Buy
+                                                Now <i class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/NightStands/furnex2018_174-600x600 (1).jpg" alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Grooves Nightstand </h5>
+                                        <p class="price text-center mt-3">
+                                            17,900LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100"
+                                        src="images/NightStands/Grooves-Bed-zoom-in-scaled-e1616508868368-600x600.jpg"
+                                        alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Rays Nightstand
+
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            17,900LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100"
+                                        src="images/NightStands/Kenda-Braid-Nightstand-scaled-600x600.jpg" alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Silhouette Nightstand
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            17,900LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick="addProduct()" type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100"
+                                        src="images/NightStands/Kenda-Metallic-Nightstand-3-scaled-600x600.jpg" alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Elite Nightstand
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            17,900LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class="fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div id="Dresses" class=" d-none bed col-md-9">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mt-3 ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/dresses/Cane-Dresser-600x600.jpg" alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Twinkle Bed
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            33,800LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/dresses/Kenda-Braid-Vanity1-scaled-600x600.jpg"
+                                        alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Rays Bed </h5>
+                                        <p class="price text-center mt-3">
+                                            17,700LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " type="button"
+                                                class="buy-now btn btn-outline-dark ">Buy
+                                                Now <i class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/dresses/Kenda-Elite-Dresser-1-scaled-600x600.jpg"
+                                        alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Embellish Bed
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            17,900LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/dresses/Rays-dresser-scaled-600x600.jpg" alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Embellish Bed
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            17,900LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/dresses/Silhouette-dresser-1-scaled-600x600.jpg"
+                                        alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Embellish Bed
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            17,900LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick="addProduct()" type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/dresses/Twinkle-Dresser-1-600x600.jpg" alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Embellish Bed
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            17,900LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class="fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div id="banquts" class=" d-none bed col-md-9">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mt-3 ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/banquts/1608159266096-1-scaled-600x600.jpg" alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Twinkle Bed
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            33,800LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100"
+                                        src="images/banquts/Grooves-Bed-1-scaled-e1616526737422-600x599.jpg" alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Rays Bed </h5>
+                                        <p class="price text-center mt-3">
+                                            17,700LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " type="button"
+                                                class="buy-now btn btn-outline-dark ">Buy
+                                                Now <i class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/banquts/Kenda-Elite-Banquette-2-scaled-600x600.jpg"
+                                        alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Embellish Bed
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            17,900LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " class="buy-now" type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/banquts/Kenda-Metallic-Banquette-scaled-600x600.jpg"
+                                        alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Embellish Bed
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            17,900LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " class="buy-now" type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/banquts/Silhouette-banquette-600x600.jpg" alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Embellish Bed
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            17,900LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick="addProduct()" type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class=" fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4  mt-3  ">
+                            <div class="product p-3">
+                                <div class="img-product w-100">
+                                    <img class="w-100" src="images/banquts/Twig-Bench-1-600x600.jpg" alt="">
+                                    <div class="img-cotent">
+                                        <h5 class="text-center mt-3">
+                                            Embellish Bed
+                                        </h5>
+                                        <p class="price text-center mt-3">
+                                            17,900LE
+                                        </p>
+                                        <div class="text-center">
+                                            <button onclick=" addProduct () " type="button"
+                                                class="btn btn-outline-dark ">Buy Now <i id="buy-now"
+                                                    class="fa-solid fa-cart-shopping ms-2 "></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+    </section>
+
+
+
+    <section class="services">
+
+        <div class="container">
+
+            <div class="product-container row">
+                <div class="col-md-4">
+                    <div class="photo photo1">
+                        <div class="layer2">
+                            <h2 class="d-flex justify-content-center align-items-center text-white h-100 my-font">Bedrooms</h2>
+
+                        </div>
+
+                    </div>
+                   
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="photo photo2">
+                        <div class="layer2">
+                            <h2 class="d-flex justify-content-center align-items-center text-white h-100 my-font">Living Rooms</h2>
+
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4">
+                    <div class="photo photo3">
+                        <div class="layer2">
+                            <h2 class="d-flex justify-content-center align-items-center text-white h-100 my-font">Dining rooms</h2>
+
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4">
+                    <div class="photo photo4">
+                        <div class="layer2">
+                            <h2 class="d-flex justify-content-center align-items-center text-white h-100 my-font">Doors</h2>
+
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4">
+                    <div class="photo photo5 mt-5 ">
+                        <div class="layer2">
+                            <h2 class="d-flex justify-content-center align-items-center text-white h-100 my-font">Partitions</h2>
+
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4">
+                    <div class="photo photo6">
+                        <div class="layer2">
+                            <h2 class="d-flex justify-content-center align-items-center text-white h-100 my-font">Offices</h2>
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer bg-black ">
+        <div class="layer2">
+            <div class="container">
+                <div class="row mt-5 pt-5">
+                    <div class="col-md-2 col-sm-3 text-white mt-5">
+                        <h5>Kenda</h5>
+                        <div class="mt-5">
+                            <p>Our Story</p>
+                            <p>Style Guide</p>
+                            <p>Showrooms</p>
+                            <p> Careers</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2 col-sm-3 text-white mt-5">
+                        <h5>Categories</h5>
+                        <div class="mt-5">
+                            <p>Bedrooms</p>
+                            <p>Dining Rooms</p>
+                            <p>Living Rooms</p>
+                            <p> Offices</p>
+                            <p> Other</p>
+                            <p> Artwork </p>
+                            <p> Accessories</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2 col-sm-3 text-white mt-5">
+                        <h5>Our Services</h5>
+                        <div class="mt-5">
+                            <p>Request a Customization</p>
+                            <p>Request a Site Measurement</p>
+                            <p>Book a Consultation</p>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-2 col-sm-3 text-white mt-5">
+                        <h5>Customer Care</h5>
+                        <div class="mt-5">
+                            <p>Contact Us</p>
+                            <p>Terms and Conditions</p>
+                            <p>Policies</p>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-6 text-white mt-5">
+                        <h5>Subscribe to our Newsletter</h5>
+                        <div class="mt-5">
+                            <input type="text" placeholder="Email :"
+                                class="email-footer bg-transparent px-3 py-3 border-0 text-white">
+                            <button type="button" class="btn btn-outline-dark text-white ms-3 mt-4">Subscribe</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container cards text-center">
+                <div class=" d-flex justify-content-center ">
+                    <img class="w-100 p-3" src="images/money-cards/Visa-e1617885841319.png" alt="">
+                    <img class="w-100 p-3" src="images/money-cards/mastercard-e1624949960751.jpg" alt="">
+                    <img class="w-100 p-3" src="images/money-cards/accept_down_white.png" alt="">
+                </div>
+            </div>
+            <p class="w-100 text-white text-center py-2">© 2022 Kenda Trading All rights reserved</p>
+
+        </div>
+    </footer>
+
+</body>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/script.js"></script>
+
+
+
+</html>

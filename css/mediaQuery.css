@@ -1,0 +1,51 @@
+@media only screen and (max-width: 990px)    {
+    .container {
+        padding: 0px 50px;
+    }
+    .banner #back-bone {
+        font-size: 70px;
+
+    }
+    nav {
+        background-color: black !important;
+    }
+    .content {
+        margin-top: -20px;
+    }
+    .video {
+        margin-top: 0rem !important ; 
+    }
+    .nav-link , .icons {
+        margin-top: 20px;
+    }
+    .icons {
+        margin-top: 30px;
+    }
+    nav , .navbar-brand {
+        text-align: center;
+    }
+ 
+    .active {
+        margin-top: -20px;
+    }
+    .navbar-toggler-icon , .navbar-toggler  {
+        background-color: tan !important;
+        padding:  7px !important;
+        color: white;
+    }
+    .navbar-toggler , .navbar-light {
+        margin-top: 15px !important;
+        color: white;
+    }
+    .cat_item {
+        padding: 20px !important;
+    }
+    
+    .product-container .photo {
+        margin-top: 40px;
+    }
+    .product-container .photo2 {
+        margin-top: 0px !important;
+    }
+}
+
